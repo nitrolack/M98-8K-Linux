@@ -1,0 +1,37 @@
+1. Step Obtaining Source
+  as the first step you have to obtain the source code of U-Boot, with which you can build it.
+  Download it or mirror the source code:
+  Download: git clone https://source.denx.de/u-boot/u-boot.git
+  Mirror Source: git clone https://github.com/u-boot/u-boot
+2. Build it with GCC
+  If you want to build it with Clang go to the U-Boot doc.
+  First of you need dependencies, with which you can compile U-Boot.
+  If you do it for the same architecture you are using the U-Boot later you use a GCC compiler and if it's a different architecture you will need a GCC cross compiler.
+  
+  We will do it with Debian:
+  You could install GCC and the GCC cross compiler for the ARMv8 architecture with
+>>    sudo apt-get install gcc gcc-aarch64-linux-gnu
+  Depending on the build targets further packages maybe needed
+>>   sudo apt-get install bc bison build-essential coccinelle \
+      device-tree-compiler dfu-util efitools flex gdisk graphviz imagemagick \
+      liblz4-tool libgnutls28-dev libguestfs-tools libncurses-dev \
+      libpython3-dev libsdl2-dev libssl-dev lz4 lzma lzma-alone openssl \
+      pkg-config python3 python3-asteval python3-coverage python3-filelock \
+      python3-pkg-resources python3-pycryptodome python3-pyelftools \
+      python3-pytest python3-pytest-xdist python3-sphinxcontrib.apidoc \
+      python3-sphinx-rtd-theme python3-subunit python3-testtools \
+      python3-virtualenv swig uuid-dev
+  
+  Prerequisites:
+    In our case we need prerequisite files, because we do have a TV-Box, which is kinda specific to the Allwinner Board in this case.
+  Building Arm Trusted Firmware (TF-A):
+    The "secure world" on arm64 machines is a special level of CPU privilege that is hidden from the normal OS, and has complete control over the system. 
+    It provides both initialization during early boot stages (before u-boot or EFI) and system monitor functionality once the machine is booted up. 
+    This is an equivalent of Intel ME on x86. (from https://packages.debian.org/buster/arm-trusted-firmware)
+  
+    We do have to do the following for the H618:
+      $ git clone https://git.trustedfirmware.org/TF-A/trusted-firmware-a.git
+      $ cd trusted-firmware-a
+      $ make CROSS_COMPILE=aarch64-linux-gnu- PLAT=sun50i_h616 DEBUG=1
+      $ export BL31=$(pwd)/build/sun50i_h616/debug/bl31.bin
+  Building the U-Boot image
