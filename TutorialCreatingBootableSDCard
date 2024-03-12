@@ -30,8 +30,16 @@
     This is an equivalent of Intel ME on x86. (from https://packages.debian.org/buster/arm-trusted-firmware)
   
     We do have to do the following for the H618:
-      $ git clone https://git.trustedfirmware.org/TF-A/trusted-firmware-a.git
-      $ cd trusted-firmware-a
-      $ make CROSS_COMPILE=aarch64-linux-gnu- PLAT=sun50i_h616 DEBUG=1
-      $ export BL31=$(pwd)/build/sun50i_h616/debug/bl31.bin
+      git clone https://github.com/ARM-software/arm-trusted-firmware.git
+      cd arm-trusted-firmware
+      make CROSS_COMPILE=aarch64-linux-gnu- PLAT=sun50i_h616 DEBUG=1
+      
   Building the U-Boot image
+    Get information from the currently running system on it. If you are willing to you can connect your device to your wifi and install mixplorer for example. But i recommend to not connect it with your wifi
+    and just get the apk of mixplorer and copy the whole Root folder from your device to an usb-stick.
+    Now you will take the vontar defconfig and dts and drop it into the the corresponding folders.
+
+    apt-get install libssl-dev
+    apt-get install swig
+    sudo apt-get install libncurses5-dev libncursesw5-de
+    
