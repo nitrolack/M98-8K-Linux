@@ -48,3 +48,7 @@
     make CROSS_COMPILE=aarch64-linux-gnu- BL31=<path_to_arm-trusted-firmware>/build/sun50i_h616/debug/bl31.bin  transpeed-8k618-t_defconfig
     make CROSS_COMPILE=aarch64-linux-gnu- BL31=<path_to_arm-trusted-firmware>/build/sun50i_h616/debug/bl31.bin
     
+  Build Linux Kernel
+    Often a shallow clone will suffice to just get mainline working:
+      git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git --depth=1
+    
