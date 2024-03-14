@@ -1,0 +1,136 @@
+Warnings, when decompiling from dtb to dts:
+
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /reserved-memory/bl31: node has a reg or ranges property, but no unit name
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /cpu-opp-table/opp@480000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /cpu-opp-table/opp@600000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /cpu-opp-table/opp@720000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /cpu-opp-table/opp@792000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /cpu-opp-table/opp@936000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /cpu-opp-table/opp@1008000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /cpu-opp-table/opp@1032000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /cpu-opp-table/opp@1104000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /cpu-opp-table/opp@1200000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /cpu-opp-table/opp@1296000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /cpu-opp-table/opp@1320000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /cpu-opp-table/opp@1344000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /cpu-opp-table/opp@1416000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /cpu-opp-table/opp@1512000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /interrupt-controller@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/ve1@1c0e000: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/sid@3006000/secure_status: node has a reg or ranges property, but no unit name
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/sid@3006000/chipid: node has a reg or ranges property, but no unit name
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/sid@3006000/rotpk: node has a reg or ranges property, but no unit name
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/sdc0@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/sdc0@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/sdc0@2: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/sdc0@3: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/sdc0@4: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/sdc1@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/sdc1@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/sdc2@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/sdc2@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/sdc2@2: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/nand0@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/nand0@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/nand0@2: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/s_cir0@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/s_cir0@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/twi0@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/twi0@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/twi1@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/twi1@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/twi2@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/twi2@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/twi3@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/twi3@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/twi4@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/twi4@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/spi1@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/spi1@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/spi1@2: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/gmac0@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/gmac0@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/gmac1@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/gmac1@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/pwm5@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/pwm5@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/spdif@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/spdif_sleep@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/ahub_daudio0@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/ahub_daudio0_sleep@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/ahub_daudio2@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/ahub_daudio2@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/ahub_daudio2@2: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/ahub_daudio2_sleep@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/ahub_daudio3@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/ahub_daudio3@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/ahub_daudio3@2: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/ahub_daudio3_sleep@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/standby@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/standby@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/standby@2: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@300b000/losc_out@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@7022000/s_twi0@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/pinctrl@7022000/s_twi0@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/twi@7081400/pmu: node has a reg or ranges property, but no unit name
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/usbc0@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/usbc1@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/usbc2@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /soc@3000000/usbc3@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /thermal-zones/cpu_thermal_zone/trips/trip-point@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /thermal-zones/cpu_thermal_zone/trips/trip-point@1: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_vs_reg): /thermal-zones/cpu_thermal_zone/trips/cpu_crit@0: node has a unit name, but no reg or ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unit_address_format): /soc@3000000/sid@3006000/speed@00: unit name should not have leading 0s
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/ve1@1c0e000: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/ac200: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/codec_plat: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/codec_mach: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/spdif_mach: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/ahub_dam_mach: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/ahub0_plat: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/ahub1_plat: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/ahub2_plat: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/ahub3_plat: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/ahub0_mach: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/ahub1_mach: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/ahub2_mach: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/ahub3_mach: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/soundspdif: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/dmic_codec: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/sounddmic: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/gpio_para: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/usbc0@0: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/usbc1@0: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/usbc2@0: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/usbc3@0: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/rfkill: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/addr_mgt: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/btlpm: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/pll_video2: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/pll_de: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/de: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/display_top: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/tcon_lcd: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/tcon_lcd1: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/tcon_tv: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/tcon_tv1: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/lvds: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/hdmi: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/hdmi_slow: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/hdmi_cec: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/hdmi_hdcp: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/pll_periph1: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (simple_bus_reg): /soc@3000000/jm_sm1628c: missing or empty reg/ranges property
+/home/paul/dtb/01_sun50iw9.dts: Warning (unique_unit_address): /soc@3000000/ve@1c0e000: duplicate unit-address (also used in node /soc@3000000/ve1@1c0e000)
+/home/paul/dtb/01_sun50iw9.dts: Warning (unique_unit_address): /soc@3000000/rtc_ccu@7000000: duplicate unit-address (also used in node /soc@3000000/rtc@7000000)
+/home/paul/dtb/01_sun50iw9.dts: Warning (unique_unit_address): /soc@3000000/usbc0@0: duplicate unit-address (also used in node /soc@3000000/usbc1@0)
+/home/paul/dtb/01_sun50iw9.dts: Warning (unique_unit_address): /soc@3000000/usbc0@0: duplicate unit-address (also used in node /soc@3000000/usbc2@0)
+/home/paul/dtb/01_sun50iw9.dts: Warning (unique_unit_address): /soc@3000000/usbc1@0: duplicate unit-address (also used in node /soc@3000000/usbc2@0)
+/home/paul/dtb/01_sun50iw9.dts: Warning (unique_unit_address): /soc@3000000/usbc0@0: duplicate unit-address (also used in node /soc@3000000/usbc3@0)
+/home/paul/dtb/01_sun50iw9.dts: Warning (unique_unit_address): /soc@3000000/usbc1@0: duplicate unit-address (also used in node /soc@3000000/usbc3@0)
+/home/paul/dtb/01_sun50iw9.dts: Warning (unique_unit_address): /soc@3000000/usbc2@0: duplicate unit-address (also used in node /soc@3000000/usbc3@0)
+/home/paul/dtb/01_sun50iw9.dts: Warning (interrupt_provider): /interrupt-controller@0: Missing #address-cells in interrupt provider
+/home/paul/dtb/01_sun50iw9.dts: Warning (interrupt_provider): /soc@3000000/pinctrl@300b000: Missing #address-cells in interrupt provider
+/home/paul/dtb/01_sun50iw9.dts: Warning (interrupt_provider): /soc@3000000/interrupt-controller@7010320: Missing #address-cells in interrupt provider
+/home/paul/dtb/01_sun50iw9.dts: Warning (alias_paths): /aliases: aliases property name must include only lowercase and '-'
