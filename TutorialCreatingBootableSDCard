@@ -46,6 +46,8 @@
       wget https://raw.githubusercontent.com/NickAlilovic/build/main/patch/u-boot/u-boot-sunxi/dts-Transpeed-8K618-T-Add-Transpeed-8K618-T-board-support.patch
       wget https://raw.githubusercontent.com/NickAlilovic/build/main/patch/u-boot/u-boot-sunxi/dts-Transpeed-8K618-T-Enable-Ethernet.patch
 
+      
+
     make CROSS_COMPILE=aarch64-linux-gnu- BL31=<path_to_arm-trusted-firmware>/build/sun50i_h616/debug/bl31.bin  transpeed-8k618-t_defconfig
     make CROSS_COMPILE=aarch64-linux-gnu- BL31=<path_to_arm-trusted-firmware>/build/sun50i_h616/debug/bl31.bin
     
