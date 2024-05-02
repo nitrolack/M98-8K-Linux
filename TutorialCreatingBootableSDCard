@@ -20,7 +20,7 @@
       python3-pkg-resources python3-pycryptodome python3-pyelftools \
       python3-pytest python3-pytest-xdist python3-sphinxcontrib.apidoc \
       python3-sphinx-rtd-theme python3-subunit python3-testtools \
-      python3-virtualenv swig uuid-dev
+      python3-virtualenv uuid-dev
   
   Prerequisites:
     In our case we need prerequisite files, because we do have a TV-Box, which is kinda specific to the Allwinner Board in this case.
@@ -35,15 +35,16 @@
       make CROSS_COMPILE=aarch64-linux-gnu- PLAT=sun50i_h616 DEBUG=1
       
   Building the U-Boot image
-    Get information from the currently running system on it. If you are willing to you can connect your device to your wifi and install mixplorer for example. But i recommend to not connect it with your wifi
-    and just get the apk of mixplorer and copy the whole Root folder from your device to an usb-stick.
-    Now you will take the vontar defconfig and dts and drop it into the the corresponding folders.
+    To build and compile U-Boot we need some more important tools: 
+      sudo apt-get install libssl-dev swig libncurses5-dev libncursesw5-de
 
-    apt-get install libssl-dev
-    apt-get install swig
-    sudo apt-get install libncurses5-dev libncursesw5-de
-
-    ( Patches need to be applied, but won't be fitted here for now )
+    Patches need to be applied, big shoutout to Nick Alilovic for providing working patches for the tv-box:
+      wget https://raw.githubusercontent.com/NickAlilovic/build/main/patch/u-boot/u-boot-sunxi/100-sunsi-add-h616-internal-eth-phy-support.patch
+      wget https://raw.githubusercontent.com/NickAlilovic/build/main/patch/u-boot/u-boot-sunxi/106-Add-int-phy-eth-H313-h616-with-AC300.patch
+      wget https://raw.githubusercontent.com/NickAlilovic/build/main/patch/u-boot/u-boot-sunxi/107-sunxi_mmc-dec-f_max-to-12MHz-to-get-emmc-reliable.patch
+      wget https://raw.githubusercontent.com/NickAlilovic/build/main/patch/u-boot/u-boot-sunxi/configs-Transpeed-8K618-T-Add-Transpeed-8K618-T-board-support.patch
+      wget https://raw.githubusercontent.com/NickAlilovic/build/main/patch/u-boot/u-boot-sunxi/dts-Transpeed-8K618-T-Add-Transpeed-8K618-T-board-support.patch
+      wget https://raw.githubusercontent.com/NickAlilovic/build/main/patch/u-boot/u-boot-sunxi/dts-Transpeed-8K618-T-Enable-Ethernet.patch
 
     make CROSS_COMPILE=aarch64-linux-gnu- BL31=<path_to_arm-trusted-firmware>/build/sun50i_h616/debug/bl31.bin  transpeed-8k618-t_defconfig
     make CROSS_COMPILE=aarch64-linux-gnu- BL31=<path_to_arm-trusted-firmware>/build/sun50i_h616/debug/bl31.bin
