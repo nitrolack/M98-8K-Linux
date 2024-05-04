@@ -1,0 +1,73 @@
+From a8b0aa64408dcf78fd622940ec3ef87f43712044 Mon Sep 17 00:00:00 2001
+From: Nick Alilovic <nickalilovic@gmail.com>
+Date: Sun, 18 Feb 2024 11:37:35 -0500
+Subject: [PATCH] dts-Transpeed-8K618-T-Enable-Ethernet
+
+Enable Ethernet
+
+Signed-off-by: Nick Alilovic <nickalilovic@gmail.com>
+---
+ .../arm/dts/sun50i-h618-transpeed-8k618-t.dts | 19 +++++++++++++++++++
+ configs/transpeed-8k618-t_defconfig           |  6 +++++-
+ 2 files changed, 24 insertions(+), 1 deletion(-)
+
+diff --git a/arch/arm/dts/sun50i-h618-transpeed-8k618-t.dts b/arch/arm/dts/sun50i-h618-transpeed-8k618-t.dts
+index 8ea1fd41ae..49a4ed84f1 100644
+--- a/arch/arm/dts/sun50i-h618-transpeed-8k618-t.dts
++++ b/arch/arm/dts/sun50i-h618-transpeed-8k618-t.dts
+@@ -15,6 +15,7 @@
+ 	compatible = "transpeed,8k618-t", "allwinner,sun50i-h618";
+ 
+ 	aliases {
++		ethernet0 = &emac1;
+ 		serial0 = &uart0;
+ 	};
+ 
+@@ -41,6 +42,24 @@
+ 	};
+ };
+ 
++&emac1 {
++	pinctrl-names = "default";
++	pinctrl-0 = <&rmii_pins>;
++	phy-mode = "rmii";
++	phy-handle = <&rmii_phy>;
++	phy-supply = <&reg_aldo1>;
++	allwinner,rx-delay-ps = <3100>;
++	allwinner,tx-delay-ps = <700>;
++	status = "okay";
++};
++
++&mdio1 {
++	rmii_phy: ethernet-phy@16 {
++		compatible = "ethernet-phy-ieee802.3-c22";
++		reg = <16>;
++	};
++};
++
+ &ehci0 {
+ 	status = "okay";
+ };
+diff --git a/configs/transpeed-8k618-t_defconfig b/configs/transpeed-8k618-t_defconfig
+index 020d3974af..ef7559bf68 100644
+--- a/configs/transpeed-8k618-t_defconfig
++++ b/configs/transpeed-8k618-t_defconfig
+@@ -16,10 +16,14 @@ CONFIG_MMC_SUNXI_SLOT_EXTRA=2
+ CONFIG_R_I2C_ENABLE=y
+ # CONFIG_SYS_MALLOC_CLEAR_ON_INIT is not set
+ CONFIG_SPL_I2C=y
++CONFIG_SPL_I2C_SUPPORT=y
+ CONFIG_SPL_SYS_I2C_LEGACY=y
+ CONFIG_SYS_I2C_MVTWSI=y
+ CONFIG_SYS_I2C_SLAVE=0x7f
+-CONFIG_SYS_I2C_SPEED=400000
++CONFIG_SYS_I2C_SPEED=100000
++CONFIG_PHY_REALTEK=y
++CONFIG_SUN8I_EMAC=y
++CONFIG_I2C3_ENABLE=y
+ CONFIG_SUPPORT_EMMC_BOOT=y
+ CONFIG_AXP313_POWER=y
+ CONFIG_AXP_DCDC3_VOLT=1360
+-- 
+2.34.1
+
