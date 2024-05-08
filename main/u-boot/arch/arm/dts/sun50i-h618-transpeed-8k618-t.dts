@@ -15,6 +15,7 @@
 	compatible = "transpeed,8k618-t", "allwinner,sun50i-h618";
 
 	aliases {
+		ethernet0 = &emac1;
 		serial0 = &uart0;
 	};
 
@@ -38,6 +39,24 @@
 		regulator-min-microvolt = <3300000>;
 		regulator-max-microvolt = <3300000>;
 		regulator-always-on;
+	};
+};
+
+&emac1 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&rmii_pins>;
+	phy-mode = "rmii";
+	phy-handle = <&rmii_phy>;
+	phy-supply = <&reg_aldo1>;
+	allwinner,rx-delay-ps = <3100>;
+	allwinner,tx-delay-ps = <700>;
+	status = "okay";
+};
+
+&mdio1 {
+	rmii_phy: ethernet-phy@16 {
+		compatible = "ethernet-phy-ieee802.3-c22";
+		reg = <16>;
 	};
 };
 
